@@ -1,0 +1,73 @@
+header .navbar-brand img {
+    max-height: 80px !important;
+}
+
+header .navbar-brand {
+    padding: 0px !important;
+}
+
+.bg-oxford-blue {
+    background-color: #fff;
+    min-height: 480px !important;
+
+}
+
+.footer-demo img {
+    max-height: 100% !important;
+}
+
+.bg-gradient-very-light-gray {
+    background: rgb(238, 174, 202);
+    background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+.form-control:focus {
+    color: #353642 !important;
+}
+
+::placeholder {
+    color: #35364261 !important;
+    opacity: 1 !important;
+}
+
+input,
+select,
+textarea,
+.form-control,
+.form-select {
+    color: #353642 !important;
+}
+
+.bg-dark-gray:focus {
+    background-color: #3536426e !important;
+}
+
+.navbar.bg-transparent,
+.navbar-modern-inner.bg-transparent,
+.navbar-full-screen-menu-inner.bg-transparent {
+    background-color: transparent !important;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .mbl-banner img {
+        max-width: 100% !important;
+    }
+
+    .mbl-banner-text {
+        text-align: center !important;
+    }
+
+    .elements-social {
+        text-align: center !important;
+    }
+}
+
+.error-message {
+    color: red !important;
+    margin: auto !important;
+    padding-left: 10px !important;
+}
