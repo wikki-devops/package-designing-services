@@ -11,12 +11,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ThankyouComponent } from './thankyou/thankyou.component';
 import { HomeComponent } from './home/home.component';
+import { ContactFormComponent } from './contact-form/contact-form.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ThankyouComponent,
-    HomeComponent
+    HomeComponent,
+    ContactFormComponent
   ],
   imports: [
     BrowserModule,

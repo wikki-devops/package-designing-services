@@ -13,13 +13,13 @@
 
       <div class="col-auto ms-auto xs-m-auto d-sm-flex">
         <div class="header-icon">
-          <div class="d-xl-inline-block">
+          <!-- <div class="d-xl-inline-block">
             <div class="alt-font fw-600"><a
                 href="https://api.whatsapp.com/send/?phone=9962730810&text=Hello%2C+I+have+a+question+about+your+service.+Can+you+please+help+me%3F&type=phone_number&app_absent=0"
                 target="_blank" class="widget-text text-black"><img src="assets/images/icons/whatsapp.png"> +91 99622
                 10810</a>
             </div>
-          </div>
+          </div> -->
           <div class="header-button ms-25px">
             <a (click)="contactform()"
               class="btn bg-white xs-bg-black btn-round-edge text-dark-gray btn-large btn-switch-text d-table d-lg-inline-block lg-mb-15px md-mx-auto">
@@ -665,8 +665,8 @@
 <section id="contactform" class="cover-background big-section pb-70px pt-70px"
   style="background-image: url('assets/images/cta-bg-2.png')">
   <div class="container position-relative">
-    <div class="row justify-content-center">
-      <div class="col-xl-6 col-lg-6 md-mb-40px">
+    <div class="row justify-content-center align-items-center">
+      <div class="col-xl-6 col-lg-6 h-auto ">
         <h3 class="text-white fw-500 ls-minus-1px">Make Your Mark</h3>
         <p class="text-white fw-700 fs-20 opacity-7 w-70">We’ll create the design magic while you handle the printing
           and
@@ -701,59 +701,8 @@
           </div>
         </div>
       </div>
-      <div class="col-lg-6">
-        <h3 class="text-white fw-500 ls-minus-1px">We're Here for You </h3>
-        <p class="text-white fw-700 fs-20 opacity-7 w-80">Connect with us for packaging that speaks</p>
-        <form [formGroup]="contactForm" (ngSubmit)="onSubmit()"
-          class="contact-form row row-cols-1 row-cols-md-2 justify-content-center">
-          <div class="col">
-            <div class="position-relative form-group mb-10px">
-              <input type="text" formControlName="name" class="form-control required" placeholder="Enter your name*" />
-              <div class="error-message"
-                *ngIf="contactForm.get('name')?.hasError('required') && contactForm.get('name')?.touched">
-                Name is required.
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="position-relative form-group mb-10px">
-              <input type="tel" formControlName="phone" class="form-control required" placeholder="Enter your phone" />
-              <div class="error-message"
-                *ngIf="contactForm.get('phone')?.hasError('required') && contactForm.get('phone')?.touched">
-                Phone No is required.
-              </div>
-            </div>
-          </div>
-          <div class="col-md-12">
-            <div class="position-relative form-group mb-10px">
-              <input type="email" formControlName="email" class="form-control required"
-                placeholder="Enter your email*" />
-              <div class="error-message"
-                *ngIf="contactForm.get('email')?.hasError('required') && contactForm.get('email')?.touched">
-                Email address is required.
-              </div>
-            </div>
-          </div>
-          <div class="col-md-12">
-            <div class="position-relative form-group mb-10px">
-              <input type="text" formControlName="brand" class="form-control required"
-                placeholder="Enter your Brand*" />
-              <div class="error-message"
-                *ngIf="contactForm.get('brand')?.hasError('required') && contactForm.get('brand')?.touched">
-                Brand is required.
-              </div>
-            </div>
-          </div>
-          <div class="col-md-12">
-            <div class="position-relative form-group form-textarea">
-              <button class="btn btn-medium btn-dark-gray btn-box-shadow btn-round-edge w-100 mt-20px" type="submit"
-                [disabled]="contactForm.invalid">
-                Submit
-              </button>
-              <div class="form-results mt-20px d-none"></div>
-            </div>
-          </div>
-        </form>
+      <div class="col-lg-6 h-800px">
+        <app-contact-form></app-contact-form>
       </div>
     </div>
   </div>
